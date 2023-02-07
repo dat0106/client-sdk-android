@@ -4,7 +4,7 @@ plugins {
 }
 
 def getDefaultUrl() {
-    return hasProperty('livekitSampleUrl') ? livekitSampleUrl : "ws://www.example.com"
+    return hasProperty('livekitSampleUrl') ? livekitSampleUrl : "wss://livekit.belo.chat:7800"
 }
 
 def getDefaultToken() {
@@ -52,7 +52,8 @@ dependencies {
 
     // If building the sample app outside the context of this repo, replace the following with:
     // api "io.livekit:livekit-android:<version>"
-    api project(":livekit-android-sdk")
+//    api "io.livekit:livekit-android:1.1.7-SNAPSHOT"
+    implementation project(":livekit-android-sdk")
 
     api "androidx.core:core-ktx:${versions.androidx_core}"
     api 'androidx.appcompat:appcompat:1.4.0'

@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun connectToRoom() {
 
-        val url = "wss://your_host"
-        val token = "your_token"
+        val url = "wss://livekit.belo.chat:7800"
+        val token = ""
 
         lifecycleScope.launch {
 

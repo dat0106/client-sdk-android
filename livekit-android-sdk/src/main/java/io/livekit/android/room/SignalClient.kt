@@ -578,6 +578,7 @@ constructor(
             null -> {
                 LKLog.v { "empty messageCase!" }
             }
+            else -> {}
         }
     }
 
